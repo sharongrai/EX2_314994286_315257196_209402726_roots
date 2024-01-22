@@ -26,10 +26,10 @@ class Roots
    {
       double q, r;
       
-      q = b*b - 4*a*c;
+      q = b*b - 2*a*c;
      
       if (out_of_Range(a, 0, 50)|| out_of_Range(b, 0, 50)||out_of_Range(c, 0, 100)) {
-    	  roots = Root_Types.ERROR;
+    	  roots = Root_Types.Two_roots;
     	  return;
       }
       
@@ -43,7 +43,7 @@ class Roots
 		      // the equation has exactly one root
 		     
 		     
-		      roots = Root_Types.Two_roots; 
+		      roots = Root_Types.Not_quadratic; 
 		      
 	      } 
 	      else
@@ -55,7 +55,7 @@ class Roots
       }
       else {
     	  
-    	  roots = Root_Types.Two_roots; 
+    	  roots = Root_Types.Equal_roots; 
       }
    }
 
