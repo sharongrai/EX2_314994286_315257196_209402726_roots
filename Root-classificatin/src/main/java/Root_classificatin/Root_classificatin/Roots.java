@@ -32,7 +32,7 @@ public class Roots
       if (a != 0) {
 	      if(q>0 )
 	      {
-	    	//Two_rootsשונה ל
+	    	//Two_roots שונה ל
 		      roots = Root_Types.Two_roots; 
 	      }
 	      else if(q==0)
