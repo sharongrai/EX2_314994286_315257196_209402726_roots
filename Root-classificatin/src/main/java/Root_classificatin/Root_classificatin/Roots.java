@@ -20,8 +20,6 @@ public class Roots
    private static boolean out_of_Range(double x, double min, double max) {
        return (x < min || x > max);
    }
-   
-   
    public static void calculate_roots(double a, double b, double c)
    {
       double q = b*b - 4*a*c; //טעות ה2 שונה ל4;
@@ -34,6 +32,7 @@ public class Roots
       if (a != 0) {
 	      if(q>0 )
 	      {
+	    	//Two_rootsשונה ל
 		      roots = Root_Types.Two_roots; 
 	      }
 	      else if(q==0)
