@@ -33,8 +33,8 @@ public class RootsTest
 	}
 	@Test
 	public void A_max_minus_one() {
-		Roots.calculate_roots(49,15,29);		
-		String  root_expected = Root_Types.No_roots.toString();
+		Roots.calculate_roots(49,-2,29);		
+		String  root_expected = Root_Types.ERROR.toString();
 		assertEquals(root_expected, Roots.root_types().toString());
 	}
 	@Test
