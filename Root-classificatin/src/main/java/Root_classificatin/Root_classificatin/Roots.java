@@ -26,7 +26,7 @@ public class Roots
          
       if (out_of_Range(a, 0, 50)|| out_of_Range(b, 0, 50)||out_of_Range(c, 0, 100)) {
     	  roots = Root_Types.ERROR;
-    	  return;
+    	  return ;
       }
       
       if (a != 0) {

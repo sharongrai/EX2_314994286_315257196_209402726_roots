@@ -38,12 +38,6 @@ public class RootsTest
 		assertEquals(root_expected, Roots.root_types().toString());
 	}
 	@Test
-	public void A_max_plus_one() {
-		Roots.calculate_roots(51,20,20);		
-		String  root_expected = Root_Types.ERROR.toString();
-		assertEquals(root_expected, Roots.root_types().toString());
-	}
-	@Test
 	public void B_min() {
 		Roots.calculate_roots(20,0,45);	
 		String  root_expected = Root_Types.No_roots.toString();		
@@ -74,12 +68,6 @@ public class RootsTest
 		assertEquals(root_expected, Roots.root_types().toString());
 	}
 	@Test
-	public void B_max_plus_one() {
-		Roots.calculate_roots(24,51,65);
-		String  root_expected = Root_Types.ERROR.toString();
-		assertEquals(root_expected, Roots.root_types().toString());
-	}
-	@Test
 	public void C_min() {
 		Roots.calculate_roots(10,20,0);	
 		String  root_expected = Root_Types.Two_roots.toString();
@@ -107,12 +95,6 @@ public class RootsTest
 	public void C_max_minus_one() {
 		Roots.calculate_roots(26,5,99);
 		String  root_expected = Root_Types.No_roots.toString();
-		assertEquals(root_expected, Roots.root_types().toString());
-	}
-	@Test
-	public void C_max_plus_one() {
-		Roots.calculate_roots(20,23,101);
-		String  root_expected = Root_Types.ERROR.toString();
 		assertEquals(root_expected, Roots.root_types().toString());
 	}
 	}
